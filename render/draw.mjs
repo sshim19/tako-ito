@@ -6,6 +6,7 @@
 import * as constants from "../engine/constants.mjs";
 import { windAt } from "../engine/wind.mjs";
 import { drawFx } from "./fx.mjs";
+import { drawMotionGuides } from "./hand-guides.mjs";
 
 export const VIEW_W = constants.VIEW_W ?? 844;
 export const VIEW_H = constants.VIEW_H ?? 390;
@@ -1155,6 +1156,7 @@ export function drawScene(ctx, state, opts = {}) {
   if (showControls) {
     drawThumbGuide(ctx, view, leftPos.x, leftPos.y, leftPos.active, !!state?.hintLeft);
     drawThumbGuide(ctx, view, rightPos.x, rightPos.y, rightPos.active, !!state?.hintRight);
+    drawMotionGuides(ctx, view, state);
   }
 
   // 糸の途中と凧、今の輪は指より手前
