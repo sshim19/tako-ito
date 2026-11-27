@@ -28,19 +28,19 @@
             <button type="button" class="btn-finish" id="btn-finish" hidden disabled aria-disabled="true">しまう</button>
           </header>
 
-          <canvas id="game" width="844" height="390" aria-label="プレイ画面。左で糸を出したり巻いたりし、右で凧を傾けます"></canvas>
+          <canvas id="game" width="844" height="390" aria-label="プレイ画面。左の親指を巻き枠の上にずらすと糸が出て、下にずらすと巻きます。右の親指を左右にずらして凧を傾けます"></canvas>
 
           <div class="hud" id="play-hud" hidden>
             <p class="hud-time" id="hud-time"></p>
           </div>
 
-          <p class="hint hint-left" id="hint-left" hidden>下へ巻くと揚がる</p>
-          <p class="hint hint-right" id="hint-right" hidden>傾ける</p>
+          <p class="hint hint-left" id="hint-left" hidden>下にずらすと巻いて揚がる</p>
+          <p class="hint hint-right" id="hint-right" hidden>左右にずらす</p>
 
           <section class="panel" id="screen-title">
             <h1 tabindex="-1">凧の糸</h1>
-            <p class="lead">左の指で糸を巻き取ると凧が上がり、出すと緩みます。右の指で凧を傾けて、今日の風に乗せます。</p>
-            <p class="rule">横向きにして、左手は上で糸を出し、下で巻き取ります。右手で左右の傾きを動かします。糸が緩むと凧は落ち、突風のときに張りすぎると糸が切れます。同じ日は、だれが遊んでも同じ風です。時間が来ると、そこまでの高さで仕舞います。</p>
+            <p class="lead">左の親指を巻き枠の上にずらすと糸が出て、下にずらすと巻いて凧が上がります。右の親指を左右にずらして、凧を風に合わせます。</p>
+            <p class="rule">横向きにして、左の親指は巻き枠の中心より上に置くと糸が出て、下に置くと巻き取ります。右の親指は横の溝を左右にずらして、凧を傾けます。糸が緩むと凧は落ち、突風のときに張りすぎると糸が切れます。同じ日は、だれが遊んでも同じ風です。時間が来ると、そこまでの高さで仕舞います。</p>
             <div class="title-path-wrap">
               <p>輪</p>
               <canvas id="title-path" width="240" height="160" aria-hidden="true"></canvas>
